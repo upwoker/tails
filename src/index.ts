@@ -1,7 +1,11 @@
 import express from 'express';
 import path from "path";
+
 const app = express();
 const port = 5000; // default port to listen
+
+// Serve static
+app.use('/static', express.static('public'))
 
 // Configure Express to use EJS
 app.set( "views", path.join( __dirname, "views/pages" ) );
