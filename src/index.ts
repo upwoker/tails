@@ -17,6 +17,11 @@ app.get( "/", ( req, res ) => {
     res.render( "index" );
 } );
 
+app.get( "/about", ( req, res ) => {
+    // render the index template
+    res.render( "about" );
+} );
+
 // start the express server
 app.listen( port, () => {
     // tslint:disable-next-line:no-console
